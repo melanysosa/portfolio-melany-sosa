@@ -1,4 +1,4 @@
-import Project1 from '../assets/project1.png'
+import Project1 from '../assets/project1.png';
 
 const Work = () => {
 	return (
@@ -11,7 +11,7 @@ const Work = () => {
 					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-gray-300'>
 						Work
 					</p>
-					<p className='py-6'>// Check out some of my recent work</p>
+					<p className='py-6'> / Check out some of my recent work</p>
 				</div>
 				{/**Container */}
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>

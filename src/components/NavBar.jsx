@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import {FaBars,FaTimes,FaGithub,FaLinkedin} from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import{BsFillPersonLinesFill} from 'react-icons/bs'
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/MSLogoTipo1.png';
 
 const NavBar = () => {
-    const [nav, setNav]=useState(false);
-    const handleClick = () => setNav(!nav);
-  return (
+	const [nav, setNav] = useState(false);
+	const handleClick = () => setNav(!nav);
+	return (
 		<div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
 			<div>
 				<img src={Logo} alt='Logo img' style={{ width: '50px' }} />
@@ -33,7 +33,7 @@ const NavBar = () => {
 				className={
 					!nav
 						? 'hidden'
-						: 'absolute top-0 left-0 w-full h-screen  bg-[#0a192f] flex flex-col justify-center items-center'
+						: 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
 				}
 			>
 				<li className='py-6 text-4xl'>Home</li>
@@ -80,7 +80,7 @@ const NavBar = () => {
 				</ul>
 			</div>
 		</div>
-  );
-}
+	);
+};
 
-export default NavBar
+export default NavBar;

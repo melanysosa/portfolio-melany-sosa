@@ -13,11 +13,9 @@ const Skills = () => {
 			{/**Container */}
 			<div className='max-w-[1000] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div>
-					<p className='text-4xl  border-b-4 border-gray-300'>
-						Skills
-					</p>
+					<p className='text-4xl  border-b-4 border-gray-300'>Skills</p>
 					<p className='py-4 '>
-						// These are the technologies i´ve worked with
+						/ These are the technologies i´ve worked with
 					</p>
 				</div>
 
@@ -55,7 +53,11 @@ const Skills = () => {
 						<p className='my-4'>Git</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16]'>
-						<img className='w-20 mx-auto' src={Github} alt='Github Logo' />
+						<img
+							className='w-20 mx-auto'
+							src={Github}
+							alt='Github Logo'
+						/>
 						<p className='my-4'>Github</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16]'>
