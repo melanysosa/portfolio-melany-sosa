@@ -6,16 +6,20 @@ import Redux from '../assets/redux.png';
 import Git from '../assets/git.png';
 import Github from '../assets/github.png';
 import Sass from '../assets/sass.png';
+import Bootstrap from '../assets/bootstrap.png'
+import Tailwind from '../assets/tailwind.png'
+
+
 
 const Skills = () => {
 	return (
-		<div name='skilss' className='bg-[#0a192f] text-gray-300'>
+		<div name='skilss' className='my-5 w-full md:h-screen  text-gray-300'>
 			{/**Container */}
 			<div className='max-w-[1000] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div>
 					<p className='text-4xl  border-b-4 border-gray-300'>Skills</p>
 					<p className='py-4 '>
-						/ These are the technologies i´ve worked with
+						/ These are the technologies i've worked with
 					</p>
 				</div>
 
@@ -63,6 +67,14 @@ const Skills = () => {
 					<div className='shadow-md shadow-[#040c16]'>
 						<img className='w-20 mx-auto' src={Sass} alt='Sass Logo' />
 						<p className='my-4'>Sass</p>
+					</div>
+					<div className='shadow-md shadow-[#040c16]'>
+						<img className='w-20 mx-auto' src={Bootstrap} alt='Sass Logo' />
+						<p className='my-4'>Bootstrap</p>
+					</div>
+					<div className='shadow-md shadow-[#040c16]'>
+						<img className='w-20 mx-auto' src={Tailwind} alt='Sass Logo' />
+						<p className='my-4'>Tailwind</p>
 					</div>
 				</div>
 			</div>

@@ -4,17 +4,24 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Skills from './components/Skills';
 import Work from './components/Work';
+import {Routes,Route} from 'react-router-dom';
+import './App.css';
+
 
 function App() {
 	return (
-		<div className='App'>
+		
+		<>
 			<NavBar />
-			<Home />
-			<About />
-			<Skills />
-			<Work />
-			<Contact />
-		</div>
+			<Routes>
+				
+				<Route path='/' element={<Home />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/skills' element={<Skills />} />
+				<Route path='/work' element={<Work />} />
+				<Route path='/contact' element={<Contact />} />
+			</Routes>
+		</>
 	);
 }
 

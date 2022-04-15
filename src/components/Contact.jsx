@@ -4,7 +4,7 @@ const Contact = () => {
 	return (
 		<div
 			name='contact'
-			className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4 '
+			className='w-full h-screen flex justify-center items-center p-4 '
 		>
 			<form
 				method='POST'
@@ -33,7 +33,7 @@ const Contact = () => {
 					name='email'
 				/>
 				<textarea
-					className='bg-[#ccd6f6] p-2 rounded-md'
+					className='bg-[#ccd6f6] p-2 rounded-md resize-none'
 					name='message'
 					rows='10'
 					placeholder='Message'

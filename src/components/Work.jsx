@@ -4,9 +4,9 @@ const Work = () => {
 	return (
 		<div
 			name='work'
-			className='w-full md:h-screen text-gray-300 bg-[#0a192f]'
+			className='w-full md:h-screen text-gray-300 '
 		>
-			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-screen'>
 				<div className='pb-8'>
 					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-gray-300'>
 						Work
@@ -28,7 +28,8 @@ const Work = () => {
 							<div>
 								<a
 									href='https://popular-movies-m.netlify.app/'
-									target='_blanck'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
 										Demo
@@ -36,7 +37,8 @@ const Work = () => {
 								</a>
 								<a
 									href='https://github.com/melanysosa/popular-movies-app'
-									target='_blanck'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
 										Code
