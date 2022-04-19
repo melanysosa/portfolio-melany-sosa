@@ -1,7 +1,7 @@
 const useStyles = () => {
 	return {
 		containerNav:
-			'w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-300',
+			' w-full h-[60px] flex justify-between items-center px-4 bg-black/30 text-gray-300 top-0 fixed',
 		nav: ' hidden md:flex  text-gray-50 text-lg',
 		navLi: 'hover:decoration-solid hover:text-cyan-500',
 		faBars: 'md:hidden ',

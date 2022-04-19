@@ -5,20 +5,23 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import Skills from './pages/Skills/Skills.jsx';
 import Work from './pages/Work/Work.jsx';
 import { Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import './App.css';
 
 function App() {
 	return (
-		<>
+		<div>
 			<NavBar />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/skills' element={<Skills />} />
-				<Route path='/work' element={<Work />} />
-				<Route path='/contact' element={<Contact />} />
-			</Routes>
-		</>
+			<AnimatePresence>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/skills' element={<Skills />} />
+					<Route path='/work' element={<Work />} />
+					<Route path='/contact' element={<Contact />} />
+				</Routes>
+			</AnimatePresence>
+		</div>
 	);
 }
 

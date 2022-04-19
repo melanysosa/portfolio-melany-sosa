@@ -6,18 +6,16 @@
 .content-div:hover {
 	background-image: linear-gradient(
 		to right,
-		rgba(112, 157, 255, 0.8),
-		hsla(242, 74%, 61%, 0.8)
+		rgba(63, 98, 182, 0.8),
+		hsla(240, 84%, 20%, 0.8)
 	) !important;
 }
 body {
 	background-image: url('./assets/blob-electricBlue2.png');
 	background-size: cover;
-   
-    
 }
 
-.navbar-mobileBg{
-    background-image: url('./assets/blob-electricBlue2.png');
+.navbar-mobileBg {
+	background-image: url('./assets/blob-electricBlue2.png');
 	background-size: cover;
 }

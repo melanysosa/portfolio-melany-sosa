@@ -12,9 +12,8 @@ const NavBar = () => {
 
 	return (
 		<div className={styles.containerNav}>
-			<div>
-				<img src={Logo} alt='Logo img' style={{ width: '50px' }} />
-			</div>
+			<img src={Logo} alt='Logo img' className='w-[50px]' />
+
 			<div>
 				<ul className={styles.nav}>
 					<li className={styles.navLi}>

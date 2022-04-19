@@ -7,6 +7,13 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Resume from '../../assets/Sosa Melany Noelia CV (1).pdf';
 import useStyles from './useStyles';
 import Button from '../../components/Button/Button';
+import { motion } from 'framer-motion';
+import {
+	opacityPages,
+	movementX1,
+	movementX2,
+	movementY,
+} from '../../components/Animations/animations';
 
 const Home = () => {
 	const styles = useStyles();
@@ -15,14 +22,29 @@ const Home = () => {
 	const toContact = () => navigate('/contact');
 
 	return (
-		<div name='home' className={styles.home}>
+		<motion.div
+			name='home'
+			className={styles.home}
+			initial='hidden'
+			animate='visible'
+			variants={opacityPages}
+		>
 			{/**Container */}
 			<div className={styles.containerHome}>
-				<p className={styles.p1}>Hi, my name is</p>
-				<h1 className={styles.name}>Melany Sosa</h1>
-				<h2 className={styles.job}>I'm a frontend developer</h2>
+				<motion.p variants={movementX1} className={styles.p1}>
+					Hi, my name is
+				</motion.p>
+				<motion.h1 variants={movementX2} className={styles.name}>
+					Melany Sosa
+				</motion.h1>
+				<motion.h2 variants={movementX1} className={styles.job}>
+					I'm a frontend developer
+				</motion.h2>
 
-				<div className={styles.containerSocialIcons}>
+				<motion.div
+					variants={movementX2}
+					className={styles.containerSocialIcons}
+				>
 					<div className={styles.linkedin}>
 						<a
 							className={styles.aLinkedin}
@@ -58,17 +80,18 @@ const Home = () => {
 							<BsFillPersonLinesFill size={30} />
 						</a>
 					</div>
-				</div>
-				<div>
+				</motion.div>
+
+				<motion.div variants={movementY}>
 					<Button
 						title={'View work'}
 						icon={<HiArrowNarrowRight className='ml-2' />}
 						onClick={toWork}
 						className={styles.btnHome}
 					/>
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

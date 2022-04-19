@@ -9,21 +9,36 @@ import Sass from '../../assets/sass.png';
 import Bootstrap from '../../assets/bootstrap.png';
 import Tailwind from '../../assets/tailwind.png';
 import useStyles from './useStyles';
+import { motion } from 'framer-motion';
+import {
+	movementX1,
+	movementX2,
+	opacityPages,
+} from '../../components/Animations/animations';
 
 const Skills = () => {
 	const styles = useStyles();
 	return (
-		<div name='skilss' className={styles.skillsContainer1}>
+		<motion.div
+			name='skilss'
+			className={styles.skillsContainer1}
+			initial='hidden'
+			animate='visible'
+			variants={opacityPages}
+		>
 			{/**Container */}
 			<div className={styles.skillsContainer2}>
-				<div>
-					<p className={styles.p1}>Skills</p>
+				<motion.div variants={movementX1}>
+					<p className={styles.titleSkills}>Skills</p>
 					<p className={styles.p2}>
 						/ These are the technologies i've worked with
 					</p>
-				</div>
+				</motion.div>
 
-				<div className={styles.divContainerSkills}>
+				<motion.div
+					variants={movementX2}
+					className={styles.divContainerSkills}
+				>
 					<div className={styles.skillsDiv}>
 						<img
 							className={styles.skillsImg}
@@ -96,9 +111,9 @@ const Skills = () => {
 						/>
 						<p className={styles.skillsP}>Tailwind</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
