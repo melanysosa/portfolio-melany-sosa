@@ -34,6 +34,7 @@ const Work = () => {
 							style={{ backgroundImage: `url(${Project1})` }}
 							className={styles.gridItem}
 						>
+					
 							{/**Hover effects */}
 							<div className={styles.divEffects}>
 								<span className={styles.span}>Popular Movies</span>

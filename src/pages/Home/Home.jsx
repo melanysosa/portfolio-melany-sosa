@@ -13,6 +13,7 @@ import {
 	movementX1,
 	movementX2,
 	movementY,
+	movement,
 } from '../../components/Animations/animations';
 
 const Home = () => {
@@ -45,7 +46,8 @@ const Home = () => {
 					variants={movementX2}
 					className={styles.containerSocialIcons}
 				>
-					<div className={styles.linkedin}>
+					<motion.div variants={movement}  >
+						<div className={styles.linkedin}>
 						<a
 							className={styles.aLinkedin}
 							href='https://www.linkedin.com/in/melanynoeliasosa/'
@@ -53,24 +55,32 @@ const Home = () => {
 							rel='noopener noreferrer'
 						>
 							<FaLinkedin size={30} />
-						</a>
-					</div>
-					<div className={styles.gitHub}>
-						<a
-							className={styles.aGitHub}
-							href='https://github.com/melanysosa'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<FaGithub size={30} />
-						</a>
-					</div>
-					<div className={styles.mail}>
-						<div className={styles.aMail} onClick={toContact}>
-							<HiOutlineMail size={30} />
+						</a></div>
+					</motion.div>
+					<motion.div variants={movement}>
+						<div className={styles.gitHub}>
+							<a
+								className={styles.aGitHub}
+								href='https://github.com/melanysosa'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<FaGithub size={30} />
+							</a>
 						</div>
-					</div>
-					<div className={styles.resume}>
+					</motion.div>
+					<motion.div variants={movement} >
+						<div className={styles.mail}>
+						<div
+							variants={movement}
+							className={styles.aMail}
+							onClick={toContact}
+						>
+							<HiOutlineMail size={30} />
+						</div></div>
+					</motion.div>
+					<motion.div variants={movement}>
+						<div className={styles.resume}>
 						<a
 							className={styles.aResume}
 							href={Resume}
@@ -78,8 +88,8 @@ const Home = () => {
 							rel='noopener noreferrer'
 						>
 							<BsFillPersonLinesFill size={30} />
-						</a>
-					</div>
+						</a></div>
+					</motion.div>
 				</motion.div>
 
 				<motion.div variants={movementY}>

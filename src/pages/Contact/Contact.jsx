@@ -6,6 +6,7 @@ import {
 	movementX1,
 	movementY,
 } from '../../components/Animations/animations';
+import Footer from '../../components/Footer/Footer';
 
 const Contact = () => {
 	const styles = useStyles();
@@ -62,8 +63,11 @@ const Contact = () => {
 						<Button title={"Let's Collaborate"} />
 					</div>
 				</motion.form>
+				<Footer/>
 			</div>
+			
 		</motion.div>
+		
 	);
 };
 
