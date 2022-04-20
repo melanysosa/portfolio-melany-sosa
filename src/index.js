@@ -9,23 +9,23 @@ import language_en from './language/en/language.json';
 import language_es from './language/es/language.json';
 
 i18next.init({
-interpolation:{ scapeValue:false },
-lng:"es",
-resources: {
-	en: {
-		language: language_en,
+	interpolation: { scapeValue: false },
+	lng: 'es',
+	resources: {
+		en: {
+			language: language_en,
+		},
+		es: {
+			language: language_es,
+		},
 	},
-	es: {
-		language: language_es,
-	},
-
-}})
+});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
 	<BrowserRouter>
-	<I18nextProvider i18n={i18next}>
-		<App />
-	</I18nextProvider>
+		<I18nextProvider i18n={i18next}>
+			<App />
+		</I18nextProvider>
 	</BrowserRouter>
 );

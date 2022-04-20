@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Resume from '../../assets/Sosa Melany Noelia CV (1).pdf';
+import Resume from '../../assets/Sosa-MelanyCV.pdf';
 import useStyles from './useStyles';
 import Button from '../../components/Button/Button';
 import { motion } from 'framer-motion';
@@ -18,8 +18,8 @@ import {
 import { useTranslation } from 'react-i18next';
 import ButtonTranslate from '../../components/ButtonTranslate/ButtonTranslate';
 
-const Home = () => {	
-	const [t]= useTranslation("language");
+const Home = () => {
+	const [t] = useTranslation('language');
 
 	const styles = useStyles();
 	const navigate = useNavigate();
@@ -34,7 +34,7 @@ const Home = () => {
 			animate='visible'
 			variants={opacityPages}
 		>
-			<ButtonTranslate/>
+			<ButtonTranslate />
 			{/**Container */}
 			<div className={styles.containerHome}>
 				<motion.p variants={movementX1} className={styles.p1}>
