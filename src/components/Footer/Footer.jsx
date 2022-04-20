@@ -1,29 +1,34 @@
 import { FaReact, FaRegHeart } from 'react-icons/fa';
 import useStyles from './useStyles';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
-    const style= useStyles();
+	const style = useStyles();
+	const [t] = useTranslation('language');
+
 	return (
 		<div className={style.containerFooter}>
-			<p className={style.pFooter}>
-				made with{' '}
-				<span className={style.spanFooter}>
-					<FaRegHeart />
-				</span>{' '}
-				using{' '}
-				<span className={style.spanFooter}>
-					<FaReact />
-				</span>
+			<p>
 				<a
-					href='https://github.com/melanysosa'
+					className={style.pFooter}
+					href='https://github.com/melanysosa/portfolio-melany-sosa'
 					target='_blank'
 					rel='noopener noreferrer'
 				>
-					by Melany Sosa
-				</a>{' '}
+					{t('footer.part1')}
+					<span className={style.spanFooter}>
+						<FaRegHeart />
+					</span>
+					{t('footer.part2')}
+					<span className={style.spanFooter}>
+						<FaReact />
+					</span>
+					{t('footer.part3')}
+				</a>
 			</p>
 		</div>
 	);
 };
 
 export default Footer;
+

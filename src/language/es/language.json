@@ -1,0 +1,42 @@
+{
+	"homePage": {
+		"title1": "Hola!, soy",
+		"title2": "Desarrolladora Front-end",
+		"titleButtonHome": "Ver Proyectos"
+	},
+	"navBarPage": {
+		"itemHome": "Inicio",
+		"itemAbout": "Sobre mi",
+		"itemSkills": "Habilidades",
+		"itemProjects": "Proyectos",
+		"itemContact": "Contacto"
+	},
+	"aboutMePage": {
+		"titleAboutMe": "Sobre mi",
+		"part1AboutMe": "¡Hola! mi nombre es Melany, soy una desarrolladora Front-end autodidacta",
+		"part2AboutMe": "Me encanta la idea de aprender nuevas tecnologías y aprovecharlas para crear proyectos innovadores e interesantes y así poder mejorar cada día. Creo que cosas increíbles se pueden lograr trabajando en equipo, porque podemos compartir conocimientos y aprender de las experiencias de los demás."
+	},
+	"skillsPage": {
+		"titleSkills": "Habilidades",
+		"subtitleSkills": "Estas son las tecnologías con las que he trabajado"
+	},
+	"projectsPages": {
+		"titleProjects": "Proyectos",
+		"subtitleProjects": "Mira mis trabajos recientes",
+		"containerProject1": "Ésta App de películas muestra la implementación de llamada a la API TMDB. Contiene un search, un botón animado, y las portadas abren una ventana modal con las reseñas de tu elección. El Home redirige a la pantalla principal de búsqueda. Se utilizó Bootstrap y css."
+	},
+	"contactPage": {
+		"titleContact": "Contacto",
+		"subtitleContact": "   Envíame un mensaje para contactarnos  ",
+		"inputName": "Nombre",
+		"inputEmail": "Email@hotmail.com",
+		"inputTextarea": "Mensaje",
+		"validP": "Proporcione una dirección de correo electrónico válida.",
+		"buttonContact": "Enviar Mensaje"
+	},
+	"footer": {
+		"part1": "Hecho con",
+		"part2": "usando",
+		"part3": "por Melany"
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"homePage": {
+		"title1": "Hello!,I'm ",
+		"title2": "Front-end developer",
+		"titleButtonHome": "View Projects"
+	},
+	"navBarPage": {
+		"itemHome": "Home",
+		"itemAbout": "About me",
+		"itemSkills": "Skills",
+		"itemProjects": "Projects",
+		"itemContact": "Contact"
+	},
+	"aboutMePage": {
+		"titleAboutMe": "About me",
+		"part1AboutMe": "Hey there! , my name is Melany,I'm  a front-end developer passionate",
+		"part2AboutMe": "I love the idea of learning new technologies and taking advantage of them to create innovative and interesting projects and thus be able to improve myself every day. I believe that incredible things can be achieved by working as a team, because we can share knowledge and learn from the experiences of others."
+	},
+	"skillsPage": {
+		"titleSkills": "Skills",
+		"subtitleSkills": "These are the technologies i've worked with"
+	},
+	"projectsPages": {
+		"titleProjects": "Projects",
+		"subtitleProjects": " Check out some of my recent work",
+		"containerProject1": "This movie application demonstrates the implementation of the TMDB API call. It contains a search, an animated button, and the covers open a modal window with the overviews of your choice. Home redirects to the main search screen. Bootstrap and css were used."
+	},
+	"contactPage": {
+		"titleContact": "Contact",
+		"subtitleContact": "Send me a message to contact us",
+		"inputName": "Name",
+		"inputEmail": "Email@hotmail.com",
+		"inputTextarea": "Message",
+		"validP": "Provide a valid email address.",
+		"buttonContact": "Send message"
+	},
+	"footer": {
+		"part1": "Made with",
+		"part2": "using",
+		"part3": "by Melany"
+	}
+}

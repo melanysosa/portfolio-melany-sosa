@@ -6,9 +6,10 @@ import {
 	movementX1,
 	movementY,
 } from '../../components/Animations/animations';
-import Footer from '../../components/Footer/Footer';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+	const [t] = useTranslation('language');
 	const styles = useStyles();
 
 	return (
@@ -21,7 +22,7 @@ const Contact = () => {
 		>
 			<div className={styles.contactDiv}>
 				<motion.div variants={movementX1} className={styles.divP}>
-					<p className={styles.p1}>Contact</p>
+					<p className={styles.p1}> {t('contactPage.titleContact')}</p>
 				</motion.div>
 				<motion.form
 					method='POST'
@@ -29,45 +30,37 @@ const Contact = () => {
 					className={styles.contactForm}
 					variants={movementY}
 				>
-					<p className={styles.p2}>
-						Submit the form below or shoot me an email-
-						sosamelanynoelia@gmail.com
-					</p>
+					<p className={styles.p2}>{t('contactPage.subtitleContact')}</p>
 
 					<input
 						className={styles.inputName}
 						type='text'
-						placeholder='Name'
+						placeholder={t('contactPage.inputName')}
 						name='name'
 						required
 					/>
 					<input
 						className={styles.inputMail}
 						type='email'
-						placeholder='Email'
+						placeholder={t('contactPage.inputEmail')}
 						name='email'
 						required
 					/>
-					<p className={styles.pValid}>
-						Please provide a valid email address.
-					</p>
+					<p className={styles.pValid}>{t('contactPage.validP')}</p>
 
 					<textarea
 						className={styles.textarea}
 						name='message'
 						rows='10'
-						placeholder='Message'
+						placeholder={t('contactPage.inputTextarea')}
 						required
 					></textarea>
 					<div className={styles.btnContact}>
-						<Button title={"Let's Collaborate"} />
+						<Button title={t('contactPage.buttonContact')} />
 					</div>
 				</motion.form>
-				<Footer/>
 			</div>
-			
 		</motion.div>
-		
 	);
 };
 

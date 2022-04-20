@@ -6,8 +6,10 @@ import {
 	movementX2,
 	movementX1,
 } from '../../components/Animations/animations';
+import { useTranslation } from 'react-i18next';
 
 const Work = () => {
+	const [t] = useTranslation('language');
 	const styles = useStyles();
 	return (
 		<motion.div
@@ -19,22 +21,23 @@ const Work = () => {
 		>
 			<div className={styles.divContainer}>
 				<motion.div variants={movementX1} className={styles.divP}>
-					<p className={styles.title}>Work</p>
+					<p className={styles.title}>
+						{t('projectsPages.titleProjects')}
+					</p>
 					<p className={styles.pWork}>
 						{' '}
-						/ Check out some of my recent work
+						{t('projectsPages.subtitleProjects')}
 					</p>
 				</motion.div>
 				{/**Container */}
 
 				<motion.div className={styles.divContainer2} variants={movementX2}>
 					{/**Grid Item */}
-					<div className='bg-black/70 p-3 rounded-lg ring-cyan-900 ring-2 '>
+					<div className={styles.gridItem1}>
 						<div
 							style={{ backgroundImage: `url(${Project1})` }}
-							className={styles.gridItem}
+							className={styles.gridItem2}
 						>
-					
 							{/**Hover effects */}
 							<div className={styles.divEffects}>
 								<span className={styles.span}>Popular Movies</span>
@@ -62,11 +65,7 @@ const Work = () => {
 						</div>{' '}
 						<div>
 							<p className='p-3 '>
-								Lorem ipsum, dolor sit amet consectetur adipisicing
-								elit. Fugit saepe aspernatur, magnam sunt reiciendis
-								laudantium recusandae a iure similique! Amet nulla et
-								dignissimos impedit sint quaerat officia expedita quis
-								deleniti.
+								{t('projectsPages.containerProject1')}
 							</p>
 						</div>
 					</div>

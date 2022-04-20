@@ -15,8 +15,12 @@ import {
 	movementY,
 	movement,
 } from '../../components/Animations/animations';
+import { useTranslation } from 'react-i18next';
+import ButtonTranslate from '../../components/ButtonTranslate/ButtonTranslate';
 
-const Home = () => {
+const Home = () => {	
+	const [t]= useTranslation("language");
+
 	const styles = useStyles();
 	const navigate = useNavigate();
 	const toWork = () => navigate('/work');
@@ -30,32 +34,34 @@ const Home = () => {
 			animate='visible'
 			variants={opacityPages}
 		>
+			<ButtonTranslate/>
 			{/**Container */}
 			<div className={styles.containerHome}>
 				<motion.p variants={movementX1} className={styles.p1}>
-					Hi, my name is
+					{t('homePage.title1')}
 				</motion.p>
 				<motion.h1 variants={movementX2} className={styles.name}>
 					Melany Sosa
 				</motion.h1>
 				<motion.h2 variants={movementX1} className={styles.job}>
-					I'm a frontend developer
+					{t('homePage.title2')}
 				</motion.h2>
 
 				<motion.div
 					variants={movementX2}
 					className={styles.containerSocialIcons}
 				>
-					<motion.div variants={movement}  >
+					<motion.div variants={movement}>
 						<div className={styles.linkedin}>
-						<a
-							className={styles.aLinkedin}
-							href='https://www.linkedin.com/in/melanynoeliasosa/'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<FaLinkedin size={30} />
-						</a></div>
+							<a
+								className={styles.aLinkedin}
+								href='https://www.linkedin.com/in/melanynoeliasosa/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<FaLinkedin size={30} />
+							</a>
+						</div>
 					</motion.div>
 					<motion.div variants={movement}>
 						<div className={styles.gitHub}>
@@ -69,33 +75,35 @@ const Home = () => {
 							</a>
 						</div>
 					</motion.div>
-					<motion.div variants={movement} >
+					<motion.div variants={movement}>
 						<div className={styles.mail}>
-						<div
-							variants={movement}
-							className={styles.aMail}
-							onClick={toContact}
-						>
-							<HiOutlineMail size={30} />
-						</div></div>
+							<div
+								variants={movement}
+								className={styles.aMail}
+								onClick={toContact}
+							>
+								<HiOutlineMail size={30} />
+							</div>
+						</div>
 					</motion.div>
 					<motion.div variants={movement}>
 						<div className={styles.resume}>
-						<a
-							className={styles.aResume}
-							href={Resume}
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<BsFillPersonLinesFill size={30} />
-						</a></div>
+							<a
+								className={styles.aResume}
+								href={Resume}
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<BsFillPersonLinesFill size={30} />
+							</a>
+						</div>
 					</motion.div>
 				</motion.div>
 
 				<motion.div variants={movementY}>
 					<Button
-						title={'View work'}
-						icon={<HiArrowNarrowRight className='ml-2' />}
+						title={t('homePage.titleButtonHome')}
+						icon={<HiArrowNarrowRight className={styles.iconButton} />}
 						onClick={toWork}
 						className={styles.btnHome}
 					/>

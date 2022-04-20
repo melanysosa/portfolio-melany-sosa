@@ -17,7 +17,8 @@ const useStyles = () => {
 		aMail: 'flex justify-center items-center w-full text-gray-300 ',
 		resume:
 			'w-[50px] h-[60px] flex m-1 ring-indigo-300  ring-2 rounded-md hover:scale-125 hover:bg-indigo-600',
-		aResume: 'flex justify-center items-center w-full text-gray-300  ',
+		aResume: 'flex justify-center items-center w-full text-gray-300 ',
+		iconButton: 'ml-2',
 	};
 };
 

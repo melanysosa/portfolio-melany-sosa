@@ -5,9 +5,11 @@ import {
 	movementX2,
 	opacityPages,
 } from '../../components/Animations/animations';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
 	const styles = useStyles();
+	const [t] = useTranslation('language');
 	return (
 		<motion.div
 			name='about'
@@ -19,7 +21,9 @@ const About = () => {
 			<motion.div variants={movementX2} className={styles.boxOpacity}>
 				<div className={styles.divP1}>
 					<div>
-						<p className={styles.title}>About me</p>
+						<p className={styles.title}>
+							{t('aboutMePage.titleAboutMe')}
+						</p>
 					</div>{' '}
 					<img
 						src={MelanyAbout}
@@ -29,18 +33,10 @@ const About = () => {
 				</div>
 				<div className={styles.divP2}>
 					<div className={styles.divP3}>
-						<p>
-							Hi, i'm Melany ,nice to meet you. Please take a look
-							around.
-						</p>
+						<p>{t('aboutMePage.part1AboutMe')}</p>
 					</div>
 					<div>
-						<p>
-							i'm passionate about this career, because there is always
-							something new to learn, I'm attracted to the idea of doing
-							it and taking advantage of it, to work on innovative and
-							interesting projects.
-						</p>
+						<p>{t('aboutMePage.part2AboutMe')}</p>
 					</div>
 				</div>
 			</motion.div>

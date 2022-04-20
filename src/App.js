@@ -7,6 +7,8 @@ import Work from './pages/Work/Work.jsx';
 import { Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './App.css';
+import Footer from './components/Footer/Footer.jsx';
+
 
 function App() {
 	return (
@@ -21,6 +23,7 @@ function App() {
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
 			</AnimatePresence>
+			<Footer />
 		</div>
 	);
 }

@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../../assets/MSLogoTipo1.png';
 import { Link } from 'react-router-dom';
 import useStyles from './useStyles';
+import { useTranslation } from 'react-i18next';
+
 
 const NavBar = () => {
 	const styles = useStyles();
@@ -10,26 +12,28 @@ const NavBar = () => {
 	const [nav, setNav] = useState(false);
 	const handleClick = () => setNav(!nav);
 
+	const [t] = useTranslation('language');
+
 	return (
 		<div className={styles.containerNav}>
 			<img src={Logo} alt='Logo img' className='w-[50px]' />
 
-			<div>
+			<div className='flex items-center'>
 				<ul className={styles.nav}>
 					<li className={styles.navLi}>
-						<Link to='/'>Home</Link>
+						<Link to='/'>{t('navBarPage.itemHome')}</Link>
 					</li>
 					<li className={styles.navLi}>
-						<Link to='/about'>About</Link>
+						<Link to='/about'>{t('navBarPage.itemAbout')}</Link>
 					</li>
 					<li className={styles.navLi}>
-						<Link to='/skills'>Skills</Link>
+						<Link to='/skills'>{t('navBarPage.itemSkills')}</Link>
 					</li>
 					<li className={styles.navLi}>
-						<Link to='/work'>Work</Link>
+						<Link to='/work'>{t('navBarPage.itemProjects')}</Link>
 					</li>
 					<li className={styles.navLi}>
-						<Link to='/contact'>Contact</Link>
+						<Link to='/contact'>{t('navBarPage.itemContact')}</Link>
 					</li>
 				</ul>
 			</div>
@@ -47,19 +51,19 @@ const NavBar = () => {
 						</div>
 
 						<li className={styles.liMobile}>
-							<Link to='/'>Home</Link>
+							<Link to='/'>{t('navBarPage.itemHome')}</Link>
 						</li>
 						<li className={styles.liMobile}>
-							<Link to='/about'>About</Link>
+							<Link to='/about'>{t('navBarPage.itemAbout')}</Link>
 						</li>
 						<li className={styles.liMobile}>
-							<Link to='/skills'>Skills</Link>
+							<Link to='/skills'>{t('navBarPage.itemSkills')}</Link>
 						</li>
 						<li className={styles.liMobile}>
-							<Link to='/work'>Work</Link>
+							<Link to='/work'>{t('navBarPage.itemProjects')}</Link>
 						</li>
 						<li className={styles.liMobile}>
-							<Link to='/contact'>Contact</Link>
+							<Link to='/contact'>{t('navBarPage.itemContact')}</Link>
 						</li>
 					</ul>
 				</div>

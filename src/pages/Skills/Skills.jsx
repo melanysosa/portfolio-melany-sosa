@@ -15,9 +15,11 @@ import {
 	movementX2,
 	opacityPages,
 } from '../../components/Animations/animations';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
 	const styles = useStyles();
+	const [t] = useTranslation('language');
 	return (
 		<motion.div
 			name='skilss'
@@ -29,10 +31,10 @@ const Skills = () => {
 			{/**Container */}
 			<div className={styles.skillsContainer2}>
 				<motion.div variants={movementX1}>
-					<p className={styles.titleSkills}>Skills</p>
-					<p className={styles.p2}>
-						/ These are the technologies i've worked with
+					<p className={styles.titleSkills}>
+						{t('skillsPage.titleSkills')}
 					</p>
+					<p className={styles.p2}>{t('skillsPage.subtitleSkills')}</p>
 				</motion.div>
 
 				<motion.div
