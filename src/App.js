@@ -4,7 +4,7 @@ import Home from './pages/Home/Home.jsx';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Skills from './pages/Skills/Skills.jsx';
 import Work from './pages/Work/Work.jsx';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import './App.css';
 import Footer from './components/Footer/Footer.jsx';
@@ -20,6 +20,7 @@ function App() {
 					<Route path='/skills' element={<Skills />} />
 					<Route path='/work' element={<Work />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='*' element={<Navigate replace to='/' />} />
 				</Routes>
 			</AnimatePresence>
 			<Footer />
