@@ -1,7 +1,7 @@
 const useStyles = () => {
 	return {
 		containerContact:
-			'w-full h-screen flex justify-center items-center p-4  mt-[100px]',
+			'w-full h-full flex justify-center items-center p-4  mt-[100px]',
 		contactForm:
 			'flex flex-col max-w-[500px] max-h-[500px] bg-black/60 rounded-xl p-6  ',
 		divP: 'pb-8',

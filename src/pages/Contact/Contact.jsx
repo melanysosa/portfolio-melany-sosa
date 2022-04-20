@@ -54,6 +54,7 @@ const Contact = () => {
 						rows='10'
 						placeholder={t('contactPage.inputTextarea')}
 						required
+						
 					></textarea>
 					<div className={styles.btnContact}>
 						<Button title={t('contactPage.buttonContact')} />
