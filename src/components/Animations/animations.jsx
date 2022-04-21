@@ -1,5 +1,5 @@
 export const opacityPages = {
-	visible: { opacity: 1, transition: { duration: 2, delay: 0.5 } },
+	visible: { opacity: 1, transition: { duration: 2, delay: 0.3 } },
 	hidden: { opacity: 0 },
 };
 export const movementX1 = {

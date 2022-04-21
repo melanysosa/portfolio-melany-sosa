@@ -7,6 +7,7 @@ import {
 	movementX1,
 } from '../../components/Animations/animations';
 import { useTranslation } from 'react-i18next';
+import Footer from '../../components/Footer/Footer';
 
 const Work = () => {
 	const [t] = useTranslation('language');
@@ -71,6 +72,7 @@ const Work = () => {
 					</div>
 				</motion.div>
 			</div>
+			<Footer />
 		</motion.div>
 	);
 };

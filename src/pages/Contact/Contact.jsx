@@ -7,6 +7,7 @@ import {
 	movementY,
 } from '../../components/Animations/animations';
 import { useTranslation } from 'react-i18next';
+import Footer from '../../components/Footer/Footer';
 
 const Contact = () => {
 	const [t] = useTranslation('language');
@@ -54,12 +55,12 @@ const Contact = () => {
 						rows='10'
 						placeholder={t('contactPage.inputTextarea')}
 						required
-						
 					></textarea>
 					<div className={styles.btnContact}>
 						<Button title={t('contactPage.buttonContact')} />
 					</div>
 				</motion.form>
+				<Footer />
 			</div>
 		</motion.div>
 	);

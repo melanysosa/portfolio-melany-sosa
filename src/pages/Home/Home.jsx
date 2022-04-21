@@ -17,6 +17,7 @@ import {
 } from '../../components/Animations/animations';
 import { useTranslation } from 'react-i18next';
 import ButtonTranslate from '../../components/ButtonTranslate/ButtonTranslate';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
 	const [t] = useTranslation('language');
@@ -109,6 +110,7 @@ const Home = () => {
 					/>
 				</motion.div>
 			</div>
+			<Footer/>
 		</motion.div>
 	);
 };

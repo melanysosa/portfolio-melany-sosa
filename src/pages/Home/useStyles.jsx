@@ -1,6 +1,6 @@
 const useStyles = () => {
 	return {
-		home: 'w-full h-screen',
+		home: 'w-full h-full',
 		containerHome:
 			'max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full ',
 		p1: 'text-3xl sm:text-5xl text-stone-300 ',

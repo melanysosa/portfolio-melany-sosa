@@ -7,7 +7,7 @@ const Footer = () => {
 	const [t] = useTranslation('language');
 
 	return (
-		<div className={style.containerFooter}>
+		<div className={style.containerFooter} name='footer'>
 			<p>
 				<a
 					className={style.pFooter}

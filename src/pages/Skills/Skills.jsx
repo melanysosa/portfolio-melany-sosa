@@ -16,6 +16,7 @@ import {
 	opacityPages,
 } from '../../components/Animations/animations';
 import { useTranslation } from 'react-i18next';
+import Footer from '../../components/Footer/Footer';
 
 const Skills = () => {
 	const styles = useStyles();
@@ -115,6 +116,7 @@ const Skills = () => {
 					</div>
 				</motion.div>
 			</div>
+			<Footer />
 		</motion.div>
 	);
 };

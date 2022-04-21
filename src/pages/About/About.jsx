@@ -6,6 +6,7 @@ import {
 	opacityPages,
 } from '../../components/Animations/animations';
 import { useTranslation } from 'react-i18next';
+import Footer from '../../components/Footer/Footer';
 
 const About = () => {
 	const styles = useStyles();
@@ -39,7 +40,9 @@ const About = () => {
 						<p>{t('aboutMePage.part2AboutMe')}</p>
 					</div>
 				</div>
+				
 			</motion.div>
+			<Footer />
 		</motion.div>
 	);
 };
