@@ -16,6 +16,7 @@ const Work = () => {
 		<motion.div
 			name='work'
 			className={styles.containerWork}
+			key='work'
 			initial='hidden'
 			animate='visible'
 			variants={opacityPages}

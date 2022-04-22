@@ -17,6 +17,7 @@ const Contact = () => {
 		<motion.div
 			name='contact'
 			className={styles.containerContact}
+			key='contact'
 			initial='hidden'
 			animate='visible'
 			variants={opacityPages}

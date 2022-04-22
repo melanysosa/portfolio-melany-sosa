@@ -6,8 +6,8 @@ import './App.css';
 function App() {
 	return (
 		<div>
+			<NavBar />
 			<AnimatePresence>
-				<NavBar />
 				<RouterApp />
 			</AnimatePresence>
 		</div>

@@ -25,6 +25,7 @@ const Skills = () => {
 		<motion.div
 			name='skilss'
 			className={styles.skillsContainer1}
+			key='skills'
 			initial='hidden'
 			animate='visible'
 			variants={opacityPages}

@@ -1,6 +1,5 @@
 {
 	"homePage": {
-		"language": "Language:",
 		"title1": "Hola!, soy",
 		"title2": "Desarrolladora Front-end",
 		"titleButtonHome": "Ver Proyectos"
@@ -30,7 +29,7 @@
 		"titleContact": "Contacto",
 		"subtitleContact": "   Envíame un mensaje para contactarnos  ",
 		"inputName": "Nombre",
-		"inputEmail": "Email@hotmail.com",
+		"inputEmail": "Correo electronico",
 		"inputTextarea": "Mensaje",
 		"validP": "Proporcione una dirección de correo electrónico válida.",
 		"buttonContact": "Enviar Mensaje"

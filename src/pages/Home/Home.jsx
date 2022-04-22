@@ -31,6 +31,7 @@ const Home = () => {
 		<motion.div
 			name='home'
 			className={styles.home}
+			key='home'
 			initial='hidden'
 			animate='visible'
 			variants={opacityPages}

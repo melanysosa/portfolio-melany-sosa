@@ -15,6 +15,7 @@ const About = () => {
 		<motion.div
 			name='about'
 			className={styles.containerAbout}
+			key='about'
 			initial='hidden'
 			animate='visible'
 			variants={opacityPages}
