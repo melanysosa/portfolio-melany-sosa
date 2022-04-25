@@ -13,7 +13,7 @@
 	},
 	"aboutMePage": {
 		"titleAboutMe": "Sobre mi",
-		"part1AboutMe": "¡Hola! mi nombre es Melany, soy una desarrolladora Front-end autodidacta",
+		"part1AboutMe": "¡Hola! mi nombre es Melany, soy desarrolladora Front-end autodidacta",
 		"part2AboutMe": "Me encanta la idea de aprender nuevas tecnologías y aprovecharlas para crear proyectos innovadores e interesantes y así poder mejorar cada día. Creo que cosas increíbles se pueden lograr trabajando en equipo, porque podemos compartir conocimientos y aprender de las experiencias de los demás."
 	},
 	"skillsPage": {
@@ -37,6 +37,6 @@
 	"footer": {
 		"part1": "Hecho con",
 		"part2": "usando",
-		"part3": "por Melany"
+		"part3": "por Mel"
 	}
 }
