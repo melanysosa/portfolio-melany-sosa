@@ -1,4 +1,3 @@
-import Project1 from '../../assets/project1.png';
 import useStyles from './useStyles';
 import { motion } from 'framer-motion';
 import {
@@ -6,6 +5,8 @@ import {
 	movementX2,
 	movementX1,
 } from '../../components/Animations/animations';
+import Project1 from '../../assets/project1.png';
+import Project2 from '../../assets/project2.png';
 import { useTranslation } from 'react-i18next';
 import Footer from '../../components/Footer/Footer';
 
@@ -68,6 +69,43 @@ const Work = () => {
 						<div>
 							<p className='p-3 '>
 								{t('projectsPages.containerProject1')}
+							</p>
+						</div>
+					</div>
+					{/***********************Weather app ******************/}
+					<div className={styles.gridItem1}>
+						<div
+							style={{ backgroundImage: `url(${Project2})` }}
+							className={styles.gridItem2}
+						>
+							{/**Hover effects */}
+							<div className={styles.divEffects}>
+								<span className={styles.span}>Weather App</span>
+								<div>
+									<a
+										href='https://weather-appms.netlify.app/'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<button className={styles.btnWorkGrid}>
+											Demo
+										</button>
+									</a>
+									<a
+										href='https://github.com/melanysosa/popular-movies-app'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<button className={styles.btnWorkGrid}>
+											Code
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>{' '}
+						<div>
+							<p className='p-3 '>
+								{t('projectsPages.containerProject2')}
 							</p>
 						</div>
 					</div>

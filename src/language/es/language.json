@@ -23,7 +23,8 @@
 	"projectsPages": {
 		"titleProjects": "Proyectos",
 		"subtitleProjects": "Mira mis trabajos recientes",
-		"containerProject1": "Ésta App de películas muestra la implementación de llamada a la API TMDB. Contiene un search, un botón animado, y las portadas abren una ventana modal con las reseñas de tu elección. El Home redirige a la pantalla principal de búsqueda. Se utilizó Bootstrap y css."
+		"containerProject1": "Ésta App de películas muestra la implementación de llamada a la API TMDB. Contiene un search, un botón animado, y las portadas abren una ventana modal con las reseñas de tu elección. El Home redirige a la pantalla principal de búsqueda. Se utilizó Bootstrap y css.",
+		"containerProject2":"Esta aplicación meteorológica muestra la implementación de la llamada a la API openweathermap con axios. Busca el clima de acuerdo a la ubicación que desee. Fue creado con Reactjs y css."
 	},
 	"contactPage": {
 		"titleContact": "Contacto",

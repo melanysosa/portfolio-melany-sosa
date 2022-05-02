@@ -23,7 +23,9 @@
 	"projectsPages": {
 		"titleProjects": "Projects",
 		"subtitleProjects": " Check out some of my recent work",
-		"containerProject1": "This movie application demonstrates the implementation of the TMDB API call. It contains a search, an animated button, and the covers open a modal window with the overviews of your choice. Home redirects to the main search screen. Bootstrap and css were used."
+		"containerProject1": "This movie application demonstrates the implementation of the TMDB API call. It contains a search, an animated button, and the covers open a modal window with the overviews of your choice. Home redirects to the main search screen. Bootstrap and css were used.",
+		"containerProject2": "This Weather App shows the implementation of the openweathermap API call with axios. It looks for the weather according to the location you want. It was created with Reactjs and css."
+		
 	},
 	"contactPage": {
 		"titleContact": "Contact",
