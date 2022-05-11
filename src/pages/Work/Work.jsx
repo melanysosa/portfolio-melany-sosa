@@ -7,8 +7,11 @@ import {
 } from '../../components/Animations/animations';
 import Project1 from '../../assets/project1.png';
 import Project2 from '../../assets/project2.png';
+import Project3 from '../../assets/project3.png';
+import Project4 from '../../assets/project4.png';
 import { useTranslation } from 'react-i18next';
 import Footer from '../../components/Footer/Footer';
+import WorkBox from './WorkBox';
 
 const Work = () => {
 	const [t] = useTranslation('language');
@@ -36,79 +39,36 @@ const Work = () => {
 
 				<motion.div className={styles.divContainer2} variants={movementX2}>
 					{/**Grid Item */}
-					<div className={styles.gridItem1}>
-						<div
-							style={{ backgroundImage: `url(${Project1})` }}
-							className={styles.gridItem2}
-						>
-							{/**Hover effects */}
-							<div className={styles.divEffects}>
-								<span className={styles.span}>Popular Movies</span>
-								<div>
-									<a
-										href='https://popular-movies-m.netlify.app/'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<button className={styles.btnWorkGrid}>
-											Demo
-										</button>
-									</a>
-									<a
-										href='https://github.com/melanysosa/popular-movies-app'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<button className={styles.btnWorkGrid}>
-											Code
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>{' '}
-						<div>
-							<p className='p-3 '>
-								{t('projectsPages.containerProject1')}
-							</p>
-						</div>
-					</div>
-					{/***********************Weather app ******************/}
-					<div className={styles.gridItem1}>
-						<div
-							style={{ backgroundImage: `url(${Project2})` }}
-							className={styles.gridItem2}
-						>
-							{/**Hover effects */}
-							<div className={styles.divEffects}>
-								<span className={styles.span}>Weather App</span>
-								<div>
-									<a
-										href='https://weather-appms.netlify.app/'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<button className={styles.btnWorkGrid}>
-											Demo
-										</button>
-									</a>
-									<a
-										href='https://github.com/melanysosa/popular-movies-app'
-										target='_blank'
-										rel='noopener noreferrer'
-									>
-										<button className={styles.btnWorkGrid}>
-											Code
-										</button>
-									</a>
-								</div>
-							</div>
-						</div>{' '}
-						<div>
-							<p className='p-3 '>
-								{t('projectsPages.containerProject2')}
-							</p>
-						</div>
-					</div>
+					<WorkBox
+						pic={Project1}
+						title='Popular Movies'
+						demo='https://popular-movies-m.netlify.app/'
+						code='https://github.com/melanysosa/popular-movies-app'
+						text={t('projectsPages.containerProject1')}
+					/>
+
+					<WorkBox
+						pic={Project2}
+						title='Weather App'
+						demo='https://weather-appms.netlify.app/'
+						code='https://github.com/melanysosa/weather-app'
+						text={t('projectsPages.containerProject2')}
+					/>
+
+					<WorkBox
+						pic={Project3}
+						title='CRUD'
+						demo='https://crud-m.netlify.app/'
+						code='https://github.com/melanysosa/crud-redux-app'
+						text={t('projectsPages.containerProject3')}
+					/>
+					<WorkBox
+						pic={Project4}
+						title='Todo List'
+						demo='https://todo-list-mns.netlify.app/'
+						code='https://github.com/melanysosa/todo-list'
+						text={t('projectsPages.containerProject4')}
+					/>
 				</motion.div>
 			</div>
 			<Footer />

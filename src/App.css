@@ -10,14 +10,22 @@
 		hsla(240, 84%, 20%, 0.8)
 	) !important;
 }
-body {
-	background-image: url('./assets/blob-electricBlue2.png');
-	background-size: cover;
+
+body:before {
+	content: '';
+	background: url('./assets/bg/splashOrangeBlue.jpg') no-repeat center
+		center/cover;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 .navbar-mobileBg {
-	background-image: url('./assets/blob-electricBlue2.png');
-	background-size: cover;
+	background: url('./assets/bg/splashOrangeBlue.jpg') no-repeat center
+		center/cover;
 }
 
 .switch {
