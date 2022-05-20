@@ -2,7 +2,11 @@
 	"homePage": {
 		"title1": "Hello!,I'm ",
 		"title2": "Front-end developer",
-		"titleButtonHome": "View Projects"
+		"titleButtonHome": "View Projects",
+		"iconLinkedin":"My Linkedin",
+		"iconGitHub":"My GitHub",
+		"iconEmail":"Send me an emai",
+		"iconPerson":"Download my resume"
 	},
 	"navBarPage": {
 		"itemHome": "Home",

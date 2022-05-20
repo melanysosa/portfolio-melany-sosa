@@ -60,6 +60,7 @@ const Home = () => {
 								href='https://www.linkedin.com/in/melanynoeliasosa/'
 								target='_blank'
 								rel='noopener noreferrer'
+								title={t('homePage.iconLinkedin')}
 							>
 								<FaLinkedin size={30} />
 							</a>
@@ -72,6 +73,7 @@ const Home = () => {
 								href='https://github.com/melanysosa'
 								target='_blank'
 								rel='noopener noreferrer'
+								title={t('homePage.iconGitHub')}
 							>
 								<FaGithub size={30} />
 							</a>
@@ -83,6 +85,7 @@ const Home = () => {
 								variants={movement}
 								className={styles.aMail}
 								onClick={toContact}
+								title={t('homePage.iconEmail')}
 							>
 								<HiOutlineMail size={30} />
 							</div>
@@ -95,6 +98,7 @@ const Home = () => {
 								href={Resume}
 								target='_blank'
 								rel='noopener noreferrer'
+								title={t('homePage.iconPerson')}
 							>
 								<BsFillPersonLinesFill size={30} />
 							</a>
@@ -111,7 +115,7 @@ const Home = () => {
 					/>
 				</motion.div>
 			</div>
-			<Footer/>
+			<Footer />
 		</motion.div>
 	);
 };

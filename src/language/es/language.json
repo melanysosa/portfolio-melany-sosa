@@ -2,7 +2,11 @@
 	"homePage": {
 		"title1": "Hola!, soy",
 		"title2": "Desarrolladora Front-end",
-		"titleButtonHome": "Ver Proyectos"
+		"titleButtonHome": "Ver Proyectos",
+		"iconLinkedin": "Mi Linkedin",
+		"iconGitHub": "Mi GitHub",
+		"iconEmail": "Enviame un correo",
+		"iconPerson": "Descargue mi CV"
 	},
 	"navBarPage": {
 		"itemHome": "Inicio",
